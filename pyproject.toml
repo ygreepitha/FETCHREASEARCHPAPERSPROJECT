@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "CLI tool to fetch research papers from PubMed"
+authors = ["Greepitha Reddy Yedla <your-email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+pandas = "^1.5.3"
+
+[tool.poetry.scripts]
+get-papers-list = "views.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
